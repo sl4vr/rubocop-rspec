@@ -2,9 +2,9 @@
 
 ## Capybara/CurrentPathExpectation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.18 | -
 
 Checks that no expectations are set on Capybara's `current_path`.
 
@@ -34,9 +34,9 @@ expect(page).to have_current_path(/widgets/)
 
 ## Capybara/FeatureMethods
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.17 | 1.25
 
 Checks for consistent method usage in feature specs.
 

@@ -2,9 +2,9 @@
 
 ## RSpec/AlignLeftLetBrace
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 1.16 | -
 
 Checks that left braces for adjacent single line lets are aligned.
 
@@ -28,9 +28,9 @@ let(:a)      { b }
 
 ## RSpec/AlignRightLetBrace
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 1.16 | -
 
 Checks that right braces for adjacent single line lets are aligned.
 
@@ -54,9 +54,9 @@ let(:a)      { b        }
 
 ## RSpec/AnyInstance
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.4 | -
 
 Check that instances are not being stubbed globally.
 
@@ -87,9 +87,9 @@ end
 
 ## RSpec/AroundBlock
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.11 | -
 
 Checks that around blocks actually run the test.
 
@@ -123,9 +123,9 @@ end
 
 ## RSpec/Be
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.25 | -
 
 Check for expectations where `be` is used without argument.
 
@@ -151,9 +151,9 @@ expect(foo).to be(true)
 
 ## RSpec/BeEql
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.7 | -
 
 Check for expectations where `be(...)` can replace `eql(...)`.
 
@@ -195,9 +195,9 @@ expect(foo).to be(nil)
 
 ## RSpec/BeforeAfterAll
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.12 | -
 
 Check that before/after(:all) isn't being used.
 
@@ -235,9 +235,9 @@ Exclude | `spec/spec_helper.rb`, `spec/rails_helper.rb`, `spec/support/**/*.rb` 
 
 ## RSpec/ContextWording
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.20 | 1.20.1
 
 `context` block descriptions should start with 'when', or 'with'.
 
@@ -279,9 +279,9 @@ Prefixes | `when`, `with`, `without` | Array
 
 ## RSpec/DescribeClass
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.0 | -
 
 Check that the first argument to the top level describe is a constant.
 
@@ -306,9 +306,9 @@ end
 
 ## RSpec/DescribeMethod
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.0 | -
 
 Checks that the second argument to `describe` specifies a method.
 
@@ -333,9 +333,9 @@ end
 
 ## RSpec/DescribeSymbol
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.15 | -
 
 Avoid describing symbols.
 
@@ -359,9 +359,9 @@ end
 
 ## RSpec/DescribedClass
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.0 | 1.11
 
 Checks that tests use `described_class`.
 
@@ -412,9 +412,9 @@ EnforcedStyle | `described_class` | `described_class`, `explicit`
 
 ## RSpec/EmptyExampleGroup
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.7 | -
 
 Checks if an example group does not include any tests.
 
@@ -487,9 +487,9 @@ CustomIncludeMethods | `[]` | Array
 
 ## RSpec/EmptyLineAfterExampleGroup
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.27 | -
 
 Checks if there is an empty line after example group blocks.
 
@@ -520,9 +520,9 @@ end
 
 ## RSpec/EmptyLineAfterFinalLet
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.14 | -
 
 Checks if there is an empty line after the last let block.
 
@@ -547,9 +547,9 @@ it { does_something }
 
 ## RSpec/EmptyLineAfterHook
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.27 | -
 
 Checks if there is an empty line after hook blocks.
 
@@ -590,9 +590,9 @@ it { does_something }
 
 ## RSpec/EmptyLineAfterSubject
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.14 | -
 
 Checks if there is an empty line after subject block.
 
@@ -615,9 +615,9 @@ let(:foo) { bar }
 
 ## RSpec/ExampleLength
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.5 | -
 
 Checks for long examples.
 
@@ -657,9 +657,9 @@ Max | `5` | Integer
 
 ## RSpec/ExampleWithoutDescription
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.22 | -
 
 Checks for examples without a description.
 
@@ -727,9 +727,9 @@ EnforcedStyle | `always_allow` | `always_allow`, `single_line_only`, `disallow`
 
 ## RSpec/ExampleWording
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.0 | 1.2
 
 Checks for common mistakes in example descriptions.
 
@@ -772,9 +772,9 @@ IgnoredWords | `[]` | Array
 
 ## RSpec/ExpectActual
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.7 | -
 
 Checks for `expect(...)` calls containing literal values.
 
@@ -804,9 +804,9 @@ Exclude | `spec/routing/**/*` | Array
 
 ## RSpec/ExpectChange
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.22 | -
 
 Checks for consistent style of change matcher.
 
@@ -853,9 +853,9 @@ EnforcedStyle | `method_call` | `method_call`, `block`
 
 ## RSpec/ExpectInHook
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.16 | -
 
 Do not use `expect` in hooks such as `before`.
 
@@ -884,9 +884,9 @@ end
 
 ## RSpec/ExpectOutput
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.10 | -
 
 Checks for opportunities to use `expect { ... }.to output`.
 
@@ -909,9 +909,9 @@ expect { my_app.print_report }.to output('Hello World').to_stdout
 
 ## RSpec/FilePath
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.2 | -
 
 Checks that spec file paths are consistent with the test subject.
 
@@ -969,9 +969,9 @@ IgnoreMethods | `false` | Boolean
 
 ## RSpec/Focus
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.5 | -
 
 Checks if examples are focused.
 
@@ -999,9 +999,9 @@ end
 
 ## RSpec/HookArgument
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.7 | -
 
 Checks the arguments passed to `before`, `around`, and `after`.
 
@@ -1079,9 +1079,9 @@ EnforcedStyle | `implicit` | `implicit`, `each`, `example`
 
 ## RSpec/HooksBeforeExamples
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.29 | -
 
 Checks for before/around/after hooks that come after an example.
 
@@ -1112,9 +1112,9 @@ end
 
 ## RSpec/ImplicitExpect
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.8 | -
 
 Check that a consistent implicit expectation style is used.
 
@@ -1154,9 +1154,9 @@ EnforcedStyle | `is_expected` | `is_expected`, `should`
 
 ## RSpec/ImplicitSubject
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.29 | 1.30
 
 Checks for usage of implicit subject (`is_expected` / `should`).
 
@@ -1200,9 +1200,9 @@ EnforcedStyle | `single_line_only` | `single_line_only`, `single_statement_only`
 
 ## RSpec/InstanceSpy
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.12 | -
 
 Checks for `instance_double` used with `have_received`.
 
@@ -1228,9 +1228,9 @@ end
 
 ## RSpec/InstanceVariable
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.0 | 1.7
 
 Checks for instance variable usage in specs.
 
@@ -1291,9 +1291,9 @@ AssignmentOnly | `false` | Boolean
 
 ## RSpec/InvalidPredicateMatcher
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.16 | -
 
 Checks invalid usage for predicate matcher.
 
@@ -1316,9 +1316,9 @@ expect(foo).to be_something
 
 ## RSpec/ItBehavesLike
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.13 | -
 
 Checks that only one `it_behaves_like` style is used.
 
@@ -1355,9 +1355,9 @@ EnforcedStyle | `it_behaves_like` | `it_behaves_like`, `it_should_behave_like`
 
 ## RSpec/IteratedExpectation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.14 | -
 
 Check that `all` matcher is used instead of iterating over an array.
 
@@ -1381,9 +1381,9 @@ end
 
 ## RSpec/LeadingSubject
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.7 | 1.14
 
 Enforce that subject is the first definition in the test.
 
@@ -1421,9 +1421,9 @@ Enforce that subject is the first definition in the test.
 
 ## RSpec/LetBeforeExamples
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.16 | 1.22
 
 Checks for `let` definitions that come after an example.
 
@@ -1462,9 +1462,9 @@ end
 
 ## RSpec/LetSetup
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.7 | -
 
 Checks unreferenced `let!` calls being used for test setup.
 
@@ -1498,9 +1498,9 @@ end
 
 ## RSpec/MessageChain
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.7 | -
 
 Check that chains of messages are not being stubbed.
 
@@ -1521,9 +1521,9 @@ allow(foo).to receive(bar: thing)
 
 ## RSpec/MessageExpectation
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | No | 1.7 | 1.8
 
 Checks for consistent message expectation style.
 
@@ -1563,9 +1563,9 @@ EnforcedStyle | `allow` | `allow`, `expect`
 
 ## RSpec/MessageSpies
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.9 | -
 
 Checks that message expectations are set using spies.
 
@@ -1605,9 +1605,9 @@ EnforcedStyle | `have_received` | `have_received`, `receive`
 
 ## RSpec/MissingExampleGroupArgument
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.28 | -
 
 Checks that the first argument to an example group is not empty.
 
@@ -1635,9 +1635,9 @@ end
 
 ## RSpec/MultipleDescribes
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.0 | -
 
 Checks for multiple top level describes.
 
@@ -1668,9 +1668,9 @@ end
 
 ## RSpec/MultipleExpectations
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.7 | 1.21
 
 Checks if examples contain too many `expect` calls.
 
@@ -1728,9 +1728,9 @@ AggregateFailuresByDefault | `false` | Boolean
 
 ## RSpec/MultipleSubjects
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.16 | -
 
 Checks if an example group defines `subject` multiple times.
 
@@ -1771,9 +1771,9 @@ end
 
 ## RSpec/NamedSubject
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.5.3 | -
 
 Checks for explicitly referenced test subjects.
 
@@ -1829,9 +1829,9 @@ IgnoreSharedExamples | `true` | Boolean
 
 ## RSpec/NestedGroups
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.7 | 1.10
 
 Checks for nested example groups.
 
@@ -1931,9 +1931,9 @@ Max | `3` | Integer
 
 ## RSpec/NotToNot
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.4 | -
 
 Checks for consistent method usage for negating expectations.
 
@@ -1963,9 +1963,9 @@ EnforcedStyle | `not_to` | `not_to`, `to_not`
 
 ## RSpec/OverwritingSetup
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.14 | -
 
 Checks if there is a let/subject that overwrites an existing one.
 
@@ -1995,9 +1995,9 @@ let!(:other) { other }
 
 ## RSpec/Pending
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | No | 1.25 | -
 
 Checks for any pending or skipped examples.
 
@@ -2031,9 +2031,9 @@ end
 
 ## RSpec/PredicateMatcher
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.16 | -
 
 Prefer using predicate matcher over using predicate method directly.
 
@@ -2097,9 +2097,9 @@ EnforcedStyle | `inflected` | `inflected`, `explicit`
 
 ## RSpec/ReceiveCounts
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.26 | -
 
 Check for `once` and `twice` receive counts matchers usage.
 
@@ -2129,9 +2129,9 @@ expect(foo).to receive(:bar).at_most(:twice).times
 
 ## RSpec/ReceiveNever
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.28 | -
 
 Prefer `not_to receive(...)` over `receive(...).never`.
 
@@ -2151,9 +2151,9 @@ expect(foo).not_to receive(:bar)
 
 ## RSpec/RepeatedDescription
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.9 | -
 
 Check for repeated description strings in example groups.
 
@@ -2189,9 +2189,9 @@ end
 
 ## RSpec/RepeatedExample
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.10 | -
 
 Check for repeated examples within example groups.
 
@@ -2213,9 +2213,9 @@ end
 
 ## RSpec/ReturnFromStub
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.16 | 1.22
 
 Checks for consistent style of stub's return setting.
 
@@ -2266,9 +2266,9 @@ EnforcedStyle | `and_return` | `and_return`, `block`
 
 ## RSpec/ScatteredLet
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.14 | -
 
 Checks for let scattered across the example group.
 
@@ -2302,9 +2302,9 @@ end
 
 ## RSpec/ScatteredSetup
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.10 | -
 
 Checks for setup scattered across multiple hooks in an example group.
 
@@ -2334,9 +2334,9 @@ end
 
 ## RSpec/SharedContext
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.13 | -
 
 Checks for proper shared_context and shared_examples usage.
 
@@ -2394,9 +2394,9 @@ end
 
 ## RSpec/SharedExamples
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.25 | -
 
 Enforces use of string to titleize shared examples.
 
@@ -2424,9 +2424,9 @@ include_examples 'foo bar baz'
 
 ## RSpec/SingleArgumentMessageChain
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 1.9 | 1.10
 
 Checks that chains of messages contain more than one element.
 
@@ -2450,9 +2450,9 @@ allow(foo).to receive("bar.baz")
 
 ## RSpec/SubjectStub
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.7 | -
 
 Checks for stubbed test subjects.
 
@@ -2475,9 +2475,9 @@ end
 
 ## RSpec/UnspecifiedException
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.30 | -
 
 Checks for a specified error in checking raised errors.
 
@@ -2515,9 +2515,9 @@ expect { do_something }.not_to raise_error
 
 ## RSpec/VerifiedDoubles
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.2.1 | 1.5
 
 Prefer using verifying doubles over normal doubles.
 
@@ -2553,9 +2553,9 @@ IgnoreSymbolicNames | `false` | Boolean
 
 ## RSpec/VoidExpect
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 1.16 | -
 
 This cop checks void `expect()`.
 
