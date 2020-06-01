@@ -56,9 +56,7 @@ module RuboCop
       # Resolver of RSpec DSL configuration
       module LanguageConfig
         def self.for(*sections)
-          [CONFIG, ROOT_CONFIG].map do |hash|
-            hash&.dig('rspec_language', *sections) || []
-          end.flatten.map(&:to_sym)
+          (RSPEC_CONFIG.dig(*sections) || []).map(&:to_sym)
         end
       end
 
