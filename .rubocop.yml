@@ -4,6 +4,10 @@ require:
  - rubocop/cop/internal_affairs
 
 AllCops:
+  RSpec:
+    Aliases:
+      Hooks:
+      - custom_hook
   DisplayCopNames: true
   TargetRubyVersion: 2.4
   Exclude:

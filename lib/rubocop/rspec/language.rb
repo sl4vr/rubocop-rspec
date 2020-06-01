@@ -100,7 +100,7 @@ module RuboCop
             prepend_after
             after
             append_after
-          ]
+          ] + AliasConfig::CONFIG.aliases_for('Hooks')
         )
 
         module Scopes
