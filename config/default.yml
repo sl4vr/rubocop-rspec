@@ -1,4 +1,14 @@
 ---
+rspec_language:
+  Hooks:
+  - prepend_before
+  - before
+  - append_before
+  - around
+  - prepend_after
+  - after
+  - append_after
+
 AllCops:
   RSpec:
     Patterns:

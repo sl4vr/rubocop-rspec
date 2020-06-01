@@ -53,6 +53,15 @@ module RuboCop
         attr_reader :selectors
       end
 
+      # Resolver of RSpec DSL configuration
+      module LanguageConfig
+        def self.for(*sections)
+          [CONFIG, ROOT_CONFIG].map do |hash|
+            hash&.dig('rspec_language', *sections) || []
+          end.flatten.map(&:to_sym)
+        end
+      end
+
       module ExampleGroups
         GROUPS  = SelectorSet.new(%i[describe context feature example_group])
         SKIPPED = SelectorSet.new(%i[xdescribe xcontext xfeature])
@@ -91,17 +100,7 @@ module RuboCop
       end
 
       module Hooks
-        ALL = SelectorSet.new(
-          %i[
-            prepend_before
-            before
-            append_before
-            around
-            prepend_after
-            after
-            append_after
-          ]
-        )
+        ALL = SelectorSet.new(LanguageConfig.for('Hooks'))
 
         module Scopes
           ALL = SelectorSet.new(

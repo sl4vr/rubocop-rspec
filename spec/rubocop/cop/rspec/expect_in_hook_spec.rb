@@ -76,4 +76,29 @@ RSpec.describe RuboCop::Cop::RSpec::ExpectInHook do
       end
     RUBY
   end
+
+  # TODO: These tests just demonstrate that hooks aliases work in rewritten cops
+  it 'does NOT add an offense for `expect` with block in `custom_hook` hook' do
+    expect_no_offenses(<<-RUBY)
+      setup do
+        expect { something }.to eq('foo')
+      end
+    RUBY
+  end
+
+  context 'when `custom_hook` is configured in AllCops.RSpec.Aliases.Hooks',
+          skip: true do
+    # TODO: Find a way to test it dynamically
+    # `custom_hook` even cannot be placed in .rubocop.yml
+    # because it will be treated as unrecognized cop
+
+    it 'adds an offense for `expect` with block in `custom_hook` hook' do
+      expect_offense(<<-RUBY)
+        custom_hook do
+          expect { something }.to eq('foo')
+          ^^^^^^ Do not use `expect` in `custom_hook` hook
+        end
+      RUBY
+    end
+  end
 end
