@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.describe RuboCop::Cop::RSpec::InvalidPredicateMatcher do
-  subject(:cop) { described_class.new }
-
   it 'registers an offense for double question' do
     expect_offense(<<-RUBY)
       expect(foo).to be_something?
