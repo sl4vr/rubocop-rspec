@@ -4,11 +4,10 @@ module RuboCop
   module RSpec
     # Helps check offenses with variable definitions
     module Variable
-      include Language
       extend RuboCop::NodePattern::Macros
 
       def_node_matcher :variable_definition?, <<~PATTERN
-        (send nil? #{(Helpers::ALL + Subject::ALL).node_pattern_union}
+        (send nil? {#rspec_subjects #rspec_helpers}
           $({sym str dsym dstr} ...) ...)
       PATTERN
     end
