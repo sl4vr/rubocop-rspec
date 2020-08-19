@@ -19,7 +19,7 @@ module RuboCop
         MSG = 'Omit `?` from `%<matcher>s`.'
 
         def_node_matcher :invalid_predicate_matcher?, <<-PATTERN
-          (send (send nil? :expect ...) #rspec_runners $(send nil? #predicate?))
+          (send (send nil? :expect ...) #rspec(:Runners) $(send nil? #predicate?))
         PATTERN
 
         def on_send(node)
